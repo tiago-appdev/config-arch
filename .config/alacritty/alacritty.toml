@@ -76,7 +76,7 @@ family = "IosevkaTerm NF"
 
 [window]
 option_as_alt = "Both"
-opacity = 0.96
+opacity = 0.93
 
 [env]
 TERM = "xterm-256color"
