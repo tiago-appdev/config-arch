@@ -66,3 +66,20 @@
    dotfiles stash push
    ```
 
+## Instalar temas e iconos
+
+1. Instalar tema de escritorio:
+   ```bash
+   sudo pacman -S arc-gtk-theme
+   ```
+
+2. Instalar iconos para el sistema (Papirus):
+   ```bash
+   sudo pacman -S papirus-icon-theme
+   ```
+
+## Fuente para sistema
+
+1. Cantarell regular para todo, excepto para monospace
+
+
