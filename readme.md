@@ -225,3 +225,18 @@ ng config -g cli.packageManager bun
    ```bash
    nvim config.yml
    ```
+
+---
+
+## Listen youtube music in terminal
+
+1. Install `yt-dlp`:
+   ```bash
+   sudo pacman -S yt-dlp
+   ```
+2. Command:
+   ```bash
+   yt-dlp -f bestaudio  ytsearch:"https://www.youtube.com/watch\?v\=jfKfPfyJRdk" -o - 2>/dev/null | ffplay -nodisp -autoexit -i - &>/dev/null
+   ```
+
+---
