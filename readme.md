@@ -1,7 +1,7 @@
-
 # Instalación y Configuración de Herramientas en Arch Linux
 
 ## Actualización e instalación de paquetes necesarios
+
 ```bash
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm base-devel curl file git wget
@@ -10,6 +10,7 @@ sudo pacman -S --needed --noconfirm base-devel curl file git wget
 ---
 
 ## Nerd Font
+
 1. Descargar **NerdFont** (IosevkaTerm NerdFont) desde [este enlace](https://www.nerdfonts.com/#home) y extraer.
 2. Crear carpeta de fuentes:
    ```bash
@@ -27,6 +28,7 @@ sudo pacman -S --needed --noconfirm base-devel curl file git wget
 ---
 
 ## Iconos del sistema
+
 ```bash
 sudo pacman -S noto-fonts-emoji
 ```
@@ -34,6 +36,7 @@ sudo pacman -S noto-fonts-emoji
 ---
 
 ## Rust
+
 1. Instalar Rustup:
    ```bash
    sudo pacman -S rustup
@@ -55,6 +58,7 @@ sudo pacman -S noto-fonts-emoji
 ---
 
 ## Alacritty
+
 1. Instalar Alacritty:
    ```bash
    sudo pacman -S --noconfirm alacritty
@@ -72,6 +76,7 @@ sudo pacman -S noto-fonts-emoji
 ---
 
 ## Zsh
+
 1. Instalar Zsh:
    ```bash
    sudo pacman -S zsh zsh-autosuggestions zsh-syntax-highlighting
@@ -101,6 +106,7 @@ sudo pacman -S noto-fonts-emoji
 ---
 
 ## Dependencias adicionales para Neovim
+
 ```bash
 sudo pacman -S fzf fd ripgrep bat exa gcc curl lazygit nodejs npm coreutils
 ```
@@ -108,6 +114,7 @@ sudo pacman -S fzf fd ripgrep bat exa gcc curl lazygit nodejs npm coreutils
 ---
 
 ## Neovim
+
 1. Instalar Neovim:
    ```bash
    sudo pacman -S neovim
@@ -122,7 +129,9 @@ sudo pacman -S fzf fd ripgrep bat exa gcc curl lazygit nodejs npm coreutils
 ---
 
 ## Configuraciones adicionales
+
 ### Yay
+
 1. Instalar Yay:
    ```bash
    git clone https://aur.archlinux.org/yay.git
@@ -131,6 +140,7 @@ sudo pacman -S fzf fd ripgrep bat exa gcc curl lazygit nodejs npm coreutils
    ```
 
 ### Navegadores
+
 - **Brave**:
   ```bash
   yay -S brave-bin
@@ -143,16 +153,19 @@ sudo pacman -S fzf fd ripgrep bat exa gcc curl lazygit nodejs npm coreutils
   ```
 
 ### Bun
+
 ```bash
 curl -fsSL https://bun.sh/install | bash
 ```
 
 ### Angular CLI
+
 ```bash
 npm install -g @angular/cli
 ```
 
 ### Configurar Bun como gestor predeterminado:
+
 ```bash
 ng config -g cli.packageManager bun
 ```
@@ -160,6 +173,7 @@ ng config -g cli.packageManager bun
 ---
 
 ## GRUB
+
 1. Instalar `os-prober`:
    ```bash
    sudo pacman -S os-prober
@@ -180,6 +194,7 @@ ng config -g cli.packageManager bun
 ---
 
 ## Git Credential Manager
+
 1. Configurar almacenamiento de credenciales:
    ```bash
    git config --global credential.credentialStore secretservice
@@ -191,4 +206,22 @@ ng config -g cli.packageManager bun
 3. Configurar Git Credential Manager:
    ```bash
    git-credential-manager configure
+   ```
+
+---
+
+## Set LazyGit configuration
+
+1. URL: https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
+2. Go to:
+   ```bash
+   cd ~/.config/lazygit
+   ```
+3. Create the file:
+   ```bash
+   touch config.yml
+   ```
+4. Edit the file with the default configuration:
+   ```bash
+   nvim config.yml
    ```
