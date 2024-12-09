@@ -234,9 +234,36 @@ ng config -g cli.packageManager bun
    ```bash
    sudo pacman -S yt-dlp
    ```
-2. Command:
+2. Install `mvp`:
    ```bash
-   yt-dlp -f bestaudio  ytsearch:"https://www.youtube.com/watch\?v\=jfKfPfyJRdk" -o - 2>/dev/null | ffplay -nodisp -autoexit -i - &>/dev/null
+   sudo pacman -S mvp
+   ```
+3. Command:
+   ```bash
+   mvp --no-video "https://www.youtube.com/watch\?v\=jfKfPfyJRdk"
    ```
 
+# See video:
+
+1. Watch the video:
+
+```bash
+mvp -ao=pulse https://www.youtube.com/watch?v=jfKfPfyJRdk
+```
+
 ---
+
+## Install gvfs-mtp (Transfer files between Android and Linux)
+
+1. Install `gvfs-mtp`:
+   ```bash
+   sudo pacman -S gvfs-mtp
+   ```
+
+### Install `mtpfs` (Transfer files between Windows and Linux):
+
+2. Install `ntfs-3g`:
+
+```bash
+sudo pacman -S ntfs-3g
+```
