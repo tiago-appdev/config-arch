@@ -236,11 +236,11 @@ ng config -g cli.packageManager bun
    ```
 2. Install `mvp`:
    ```bash
-   sudo pacman -S mvp
+   sudo pacman -S mpv
    ```
 3. Command:
    ```bash
-   mvp --no-video "https://www.youtube.com/watch\?v\=jfKfPfyJRdk"
+   mpv --no-video "https://www.youtube.com/watch\?v\=jfKfPfyJRdk"
    ```
 
 # See video:
@@ -248,7 +248,7 @@ ng config -g cli.packageManager bun
 1. Watch the video:
 
 ```bash
-mvp -ao=pulse https://www.youtube.com/watch?v=jfKfPfyJRdk
+mpv -ao=pulse https://www.youtube.com/watch?v=jfKfPfyJRdk
 ```
 
 ---
