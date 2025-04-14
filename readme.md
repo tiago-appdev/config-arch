@@ -240,7 +240,7 @@ ng config -g cli.packageManager bun
    ```
 3. Command:
    ```bash
-   mpv --no-video "https://www.youtube.com/watch\?v\=jfKfPfyJRdk"
+   mpv --no-video https://www.youtube.com/watch\?v\=jfKfPfyJRdk
    ```
 
 # See video:
